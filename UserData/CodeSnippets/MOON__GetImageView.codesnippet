@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON__GetImageView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if (!_&lt;#imageViewName#&gt;) {
+    _&lt;#imageViewName#&gt; = [[UIImageView alloc]init];
+    _&lt;#imageViewName#&gt;.contentMode = UIViewContentModeScaleAspectFill;
+    _&lt;#imageViewName#&gt;.backgroundColor = [UIColor clearColor];
+    [_&lt;#imageViewName#&gt; setImage:[UIImage imageNamed:@"&lt;#imageName#&gt;"]];
+}
+return _&lt;#imageViewName#&gt;;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON__GetImageView</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>生成一个 UIImageView 的 Getter</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_GetImageView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

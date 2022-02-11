@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON_GetLazyUIButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    private lazy var &lt;#Button#&gt;: UIButton = {
+        let &lt;#Button#&gt; = UIButton(type: .custom)
+        &lt;#Button#&gt;.backgroundColor = &lt;#Color#&gt;
+        &lt;#Button#&gt;.setTitle(&lt;#T##title: String?##String?#&gt;, for: .normal)
+        &lt;#Button#&gt;.titleLabel?.font = UIFont.systemFont(ofSize: &lt;#Size#&gt;, weight: .regular)
+        &lt;#Button#&gt;.setTitleColor(&lt;#T##color: UIColor?##UIColor?#&gt;, for: .normal)
+        &lt;#Button#&gt;.setTitleColor(&lt;#T##color: UIColor?##UIColor?#&gt;.withAlphaComponent(0.6), for: .highlighted)
+        &lt;#Button#&gt;.setImage(UIImage(named: "&lt;#Name#&gt;"), for: .normal)
+        &lt;#Button#&gt;.setImage(UIImage(named: "&lt;#Name#&gt;"), for: .highlighted)
+        &lt;#Button#&gt;.contentEdgeInsets = &lt;#Insets#&gt;
+        &lt;#Button#&gt;.addTarget(self, action: #selector(&lt;#Button#&gt;Event(button:)), for: .touchUpInside)
+        return &lt;#Button#&gt;
+    }()
+    
+    @objc private func &lt;#Button#&gt;Event(button: UIButton) {
+        
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON_GetLazyUIButton</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIButton 快速声明</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_GetLazyUIButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

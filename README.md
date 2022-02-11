@@ -1,24 +1,37 @@
-# MyXcode
+# 个人工作流
 
-#### 项目介绍
-* Xcode IDE 个人配置
-  * 路径：``~/Library/Developer/Xcode/UserData/``
-  * CodeSnippets：代码片段
-  * FontAndColorThemes：主题
-  * KeyBindings：快捷键
 
-* 清理 Xcode 磁盘空间
 
-  ```shell
-  $ chmod +x clean_my_xcode.sh
-  $ ./clean_my_xcode.sh
-  ```
+## Alfred
 
-#### 使用说明
+* [下载](https://macwk.com/soft/alfred-4)
+* 个人设置同步：``Advanced -> Syncing``
 
-手动拷贝
 
-#### 关键字
+
+## Kcptun
+
+* ``.json`` 内 ``key`` 字段需自行补足
+
+
+
+## Scripts
+
+脚本备份
+
+
+
+## Xcode
+
+* 手动合并
+* 路径：``~/Library/Developer/Xcode/UserData/``
+* CodeSnippets：代码片段
+* FontAndColorThemes：主题
+* KeyBindings：快捷键
+
+
+
+## Snippets
 
 * 固定前缀：``MOON``
 * 片段文件名：OC 用``MOON__``开头，Swift 用``MOON_``开头以区分，快捷方式不变。
@@ -36,6 +49,4 @@
   * 用户事件：``MOON_SingleTapGesture``
 
 
-#### 参与贡献
 
-@darkThanBlack

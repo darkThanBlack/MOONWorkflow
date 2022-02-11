@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON_NewViewModel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class &lt;#Name#&gt;ViewModel {
+    
+    enum Style {
+        case other
+    }
+    private(set) var style: Style = .other
+    func config(style: Style) {
+        self.style = style
+    }
+    
+    struct CellInfo {
+        
+    }
+    private(set) var cells: [CellInfo] = []
+    func configCells(data: &lt;#DATA#&gt;, complete: (() -&gt; Void)?) {
+        var tmpCells: [CellInfo] = []
+        for item in data {
+            let cell = CellInfo()
+            //do sth.
+            tmpCells.append(cell)
+        }
+        cells = tmpCells
+        
+        complete?()
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON_NewViewModel</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>初始化一个新的ViewModel</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_NewViewModel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

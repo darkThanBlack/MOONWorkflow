@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON__GetLabel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if (!_&lt;#LabelName#&gt;) {
+    _&lt;#LabelName#&gt; = [[UILabel alloc]init];
+    _&lt;#LabelName#&gt;.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt; weight:&lt;#(UIFontWeight)#&gt;];
+    _&lt;#LabelName#&gt;.textColor = &lt;#Color#&gt;;
+}
+return _&lt;#LabelName#&gt;;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON__GetLabel</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>生成一个 UILabel 的 Getter</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_GetLabel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

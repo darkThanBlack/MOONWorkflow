@@ -7,6 +7,7 @@
 		<string>features.websearch.google.fallback</string>
 		<string>features.websearch.bing.fallback</string>
 		<string>features.websearch.custom.23F72474-D6EB-4192-B7AD-EF0D9D0571A4.fallback</string>
+		<string>features.websearch.custom.5F75C817-089C-4380-ABC8-A3A6F8035D5B.fallback</string>
 	</array>
 </dict>
 </plist>

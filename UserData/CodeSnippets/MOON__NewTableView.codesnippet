@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON__NewTableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import "&lt;#Cell#&gt;.h"
+
+&lt;UITableViewDelegate, UITableViewDataSource&gt;
+
+@property (nonatomic, strong) UITableView *tableView;
+
+- (UITableView *)tableView
+{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]init];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        
+        if (@available(iOS 11.0, *)) {
+            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+        
+        [_tableView registerClass:[&lt;#Cell#&gt; class] forCellReuseIdentifier:NSStringFromClass([&lt;#Cell#&gt; class])];
+    }
+    return _tableView;
+}
+
+#pragma mark TableViewHandle
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    &lt;#Cell#&gt; *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([&lt;#Cell#&gt; class])];
+    
+    return cell;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON__NewTableView</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>初始化一个新的 UITableView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_NewTableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

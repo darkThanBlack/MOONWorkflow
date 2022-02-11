@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON__NewButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong) UIButton *&lt;#ButtonName#&gt;;
+
+- (UIButton *)&lt;#ButtonName#&gt;
+{
+    if (!_&lt;#ButtonName#&gt;) {
+        _&lt;#ButtonName#&gt; = [UIButton buttonWithType:UIButtonTypeCustom];
+        _&lt;#ButtonName#&gt;.backgroundColor = &lt;#backgroundColor#&gt;;
+        [_&lt;#ButtonName#&gt; setTitle:&lt;#(nullable NSString *)#&gt; forState:UIControlStateNormal];
+        [_&lt;#ButtonName#&gt; setTitle:&lt;#(nullable NSString *)#&gt; forState:UIControlStateHighlighted];
+        [_&lt;#ButtonName#&gt; setTitleColor:&lt;#titleColor#&gt; forState:UIControlStateNormal];
+        [_&lt;#ButtonName#&gt; setTitleColor:&lt;#titleColor#&gt; forState:UIControlStateHighlighted];
+        _&lt;#ButtonName#&gt;.titleLabel.font = [UIFont systemFontOfSize:&lt;#(CGFloat)#&gt; weight:&lt;#(UIFontWeight)#&gt;];
+        
+        [_&lt;#ButtonName#&gt; setImage:[UIImage imageNamed:@"&lt;#imageName#&gt;"] forState:UIControlStateNormal];
+        [_&lt;#ButtonName#&gt; setImage:[UIImage imageNamed:@"&lt;#imageName#&gt;"] forState:UIControlStateHighlighted];
+        
+        [_&lt;#ButtonName#&gt; addTarget:self action:@selector(&lt;#ButtonName#&gt;Event) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _&lt;#ButtonName#&gt;;
+}
+
+- (void)&lt;#ButtonName#&gt;Event
+{
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON__NewButton</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>初始化一个新的 UIButton</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_NewButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

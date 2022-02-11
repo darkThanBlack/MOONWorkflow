@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON__SingleTap</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        &lt;#view#&gt;.userInteractionEnabled = YES;
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:&lt;#(nullable id)#&gt; action:&lt;#(nullable SEL)#&gt;];
+        singleTap.numberOfTapsRequired = 1;
+        singleTap.numberOfTouchesRequired = 1;
+        [&lt;#view#&gt; addGestureRecognizer:singleTap];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON__SingleTap</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_SingleTap</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -43,6 +43,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>5F75C817-089C-4380-ABC8-A3A6F8035D5B</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>diigo</string>
+			<key>text</key>
+			<string>Search Diigo for '{query}'</string>
+			<key>url</key>
+			<string>https://www.diigo.com/user/darkthanblack?query={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>onlyShowEnabledInPrefs</key>
 	<true/>
