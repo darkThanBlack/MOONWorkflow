@@ -11,6 +11,8 @@
 
 ## Kcptun
 
+* ``~/.ShadowsocksX-NG/user-rule.txt``
+* ``~/Library/Preferences/com.qiuyuzhou.ShadowsocksX-NG.plist``
 * ``.json`` 内 ``key`` 字段需自行补足
 
 
