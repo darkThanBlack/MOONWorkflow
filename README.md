@@ -15,6 +15,13 @@
 
 
 
+## PicGo
+
+* [下载](https://picgo.github.io/PicGo-Doc/zh/guide/#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85)
+* ``~/Library/Application Support/picgo/data.json``
+
+
+
 ## Scripts
 
 脚本备份
