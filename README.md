@@ -2,24 +2,38 @@
 
 
 
+>  安装包放在``packages``分支
+
+
+
+
 ## Alfred
 
 * [下载](https://macwk.com/soft/alfred-4)
+* 访问权限：完全磁盘访问权限
 * 个人设置同步：``Advanced -> Syncing``
+* 应用搜索：``Features -> Search Scope`` 添加 ``Applications``
 
 
 
-## Kcptun
+## SS + KcpTun
 
 * ``~/.ShadowsocksX-NG/user-rule.txt``
 * ``~/Library/Preferences/com.qiuyuzhou.ShadowsocksX-NG.plist``
-* ``.json`` 内 ``key`` 字段需自行补足
+
+
+
+## iTerm2
+
+* [下载](https://iterm2.com/downloads.html)
+* 个人设置同步：``Preferences -> General -> Preferences``
 
 
 
 ## PicGo
 
 * [下载](https://picgo.github.io/PicGo-Doc/zh/guide/#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85)
+* [打不开/打开黑屏](https://github.com/Molunerfinn/PicGo/issues/781#issuecomment-1008603421)
 * ``~/Library/Application Support/picgo/data.json``
 
 
