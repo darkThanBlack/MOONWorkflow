@@ -1,7 +1,7 @@
 ! Put user rules line by line in this file.
 ! See https://adblockplus.org/en/filter-cheatsheet
-github.com
-github.blog
+*.github.com
+*.github.blog
 *.github.io
 *.githubusercontent.com
 i.stack.imgur.com
@@ -15,3 +15,9 @@ nshipster.com
 pub.dev
 support.typora.io
 diigo.com
+ssr.tools
+app.diagrams.net
+draw.io
+preppercn.com
+arr014.network
+*.openai.com
