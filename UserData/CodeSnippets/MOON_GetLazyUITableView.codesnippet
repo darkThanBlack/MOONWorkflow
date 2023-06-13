@@ -16,7 +16,12 @@
         tableView.dataSource = self
         tableView.separatorStyle = .none
         tableView.estimatedRowHeight = 44.0
-        //tableView.register(&lt;#Cell#&gt;.self, forCellReuseIdentifier: "&lt;#Cell#&gt;")
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+        } else {
+            self.automaticallyAdjustsScrollViewInsets = false
+        }
+        // tableView.register(&lt;#Cell#&gt;.self, forCellReuseIdentifier: String(describing: &lt;#Cell#&gt;.self))
         return tableView
     }()
     
@@ -32,14 +37,14 @@
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
-            if indexPath.row &lt; &lt;#cells#&gt;.count,
-               let cellInfo = &lt;#cells#&gt;[indexPath.row],
-               let cell = tableView.dequeueReusableCell(withIdentifier: "&lt;#Cell#&gt;") as? &lt;#Cell#&gt; {
-                cell.configCell(data: cellInfo)
-                return cell
-            } else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "&lt;#Cell#&gt;") as? &lt;#Cell#&gt; else {
                 return UITableViewCell()
             }
+            if indexPath.row &lt; &lt;#cells#&gt;.count,
+               let cellInfo = &lt;#cells#&gt;[indexPath.row] {
+            cell.configCell(data: cellInfo)
+            }
+            return cell
         }
     }
 </string>
