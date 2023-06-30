@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   IDETemplateMacros.plist
+   DTBKit
+
+   Created by 徐一丁 on 2023/6/30.
+   Copyright (c) 2023 darkThanBlack. All rights reserved.
+-->
+<plist version="1.0">
+<dict>
+    <key>FILEHEADER</key>
+    <string>
+//  ___FILENAME___
+//  ___PACKAGENAME___
+//
+//  Created by moonShadow on ___DATE___
+//  ___COPYRIGHT___
+//
+//  LICENSE: SAME AS REPOSITORY
+//  Contact me: [GitHub](https://github.com/darkThanBlack)
+//
+    </string>
+</dict>
+</plist>
