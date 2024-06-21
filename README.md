@@ -2,17 +2,15 @@
 
 
 
->  安装包放在``packages``分支
+>  ~~安装包放在``packages``分支~~
 
 
 
+## 拉取
 
-## Alfred
-
-* [下载](https://macwk.com/soft/alfred-4)
-* 访问权限：完全磁盘访问权限
-* 个人设置同步：``Advanced -> Syncing``
-* 应用搜索：``Features -> Search Scope`` 添加 ``Applications``
+```shell
+$ git clone --depth 1 --branch master git@github.com:darkThanBlack/MOONWorkflow.git
+```
 
 
 
@@ -26,31 +24,61 @@
 ## iTerm2
 
 * [下载](https://iterm2.com/downloads.html)
-* 个人设置同步：``Preferences -> General -> Preferences``
+* 个人设置同步：``Preferences -> General -> Settings -> Load settings from a custom folder or URL``
 
 
 
-## PicGo
+## Karabiner
 
-* [下载](https://picgo.github.io/PicGo-Doc/zh/guide/#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85)
-* [打不开/打开黑屏](https://github.com/Molunerfinn/PicGo/issues/781#issuecomment-1008603421)
-* ``~/Library/Application Support/picgo/data.json``
+* [下载](https://karabiner-elements.pqrs.org/) 或 [GitHub](https://github.com/pqrs-org/Karabiner-Elements/releases)
+* 个人设置同步
+  * ``Setting -> Misc -> Open config folder``
+  * ``~/.config/karabiner``
 
 
 
-## Scripts
+## Alfred
 
-脚本备份
+* [下载](https://macked.app/alfred.html)
+* 访问权限：完全磁盘访问权限
+* 个人设置同步：``Advanced -> Syncing``
+* 应用搜索：``Features -> Search Scope`` 添加 ``Applications``
+
+
+
+## Typora
+
+* [中文官网下载](https://typoraio.cn/)
+
+* [英文官网下载](https://typora.io/)
+
+* 破解：
+
+  ```shell
+  # 找到文件: /Applications/Typora.app/Contents/Resources/TypeMark/page-dist/static/js/LicenseIndex.180dd4c7.6d698c41.chunk.js
+  # 检查字段: hasActivated="true"
+  ```
 
 
 
 ## Xcode
 
-* 手动合并
-* 路径：``~/Library/Developer/Xcode/UserData/``
-* CodeSnippets：代码片段
-* FontAndColorThemes：主题
-* KeyBindings：快捷键
+* [单独安装模拟器环境](https://developer.apple.com/documentation/xcode/installing-additional-simulator-runtimes)
+
+  ```shell
+  sudo xcode-select -s /Applications/Xcode-beta.app;
+  sudo xcodebuild -runFirstLaunch;
+  sudo xcrun simctl runtime add "~/Downloads/**.dmg"
+  ```
+
+  
+
+* ``~/Library/Developer/Xcode/UserData``
+
+  * CodeSnippets：代码片段
+  * FontAndColorThemes：主题
+  * KeyBindings：快捷键
+
 
 
 
@@ -73,3 +101,14 @@
 
 
 
+## PicGo
+
+* [下载](https://picgo.github.io/PicGo-Doc/zh/guide/#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85)
+* [打不开/打开黑屏](https://github.com/Molunerfinn/PicGo/issues/781#issuecomment-1008603421)
+* ``~/Library/Application Support/picgo/data.json``
+
+
+
+## Scripts
+
+脚本备份
