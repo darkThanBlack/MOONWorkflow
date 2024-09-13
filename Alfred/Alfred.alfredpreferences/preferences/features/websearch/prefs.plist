@@ -17,6 +17,28 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>1B6D998D-6C33-4E72-BC81-9A4FD4E55F35</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>google</string>
+			<key>text</key>
+			<string>Search Google for '{query}'</string>
+			<key>url</key>
+			<string>https://www.google.com.hk/search?q={query}+-csdn+-tencent+-baidu</string>
+		</dict>
+		<key>1BC74099-8D07-4A00-8FE4-F028147BAB74</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>githubrepository</string>
+			<key>text</key>
+			<string>Search github for '{query}'</string>
+			<key>url</key>
+			<string>https://github.com/search?type=repositories&amp;q={query}</string>
+		</dict>
 		<key>23F72474-D6EB-4192-B7AD-EF0D9D0571A4</key>
 		<dict>
 			<key>enabled</key>
@@ -26,9 +48,18 @@
 			<key>text</key>
 			<string>Search Baidu for '{query}'</string>
 			<key>url</key>
-			<string>https://www.baidu.com/s?wd={query}</string>
-			<key>utf8</key>
+			<string>https://www.baidu.com/s?wd={query}%20-(csdn)%20-(baidu)</string>
+		</dict>
+		<key>28EC5620-73F8-42D7-81E8-DE1469D315AB</key>
+		<dict>
+			<key>enabled</key>
 			<true/>
+			<key>keyword</key>
+			<string>stackoverflow</string>
+			<key>text</key>
+			<string>Search stackoverflow for '{query}'</string>
+			<key>url</key>
+			<string>https://stackoverflow.com/search?q=%5Bios%5D+{query}</string>
 		</dict>
 		<key>495132AC-571D-40FB-9235-0C1641499DFB</key>
 		<dict>
@@ -55,6 +86,28 @@
 			<string>https://www.diigo.com/user/darkthanblack?query={query}</string>
 			<key>utf8</key>
 			<true/>
+		</dict>
+		<key>BAAF1B59-FD68-4534-A08D-4D3916F1D99E</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>bing</string>
+			<key>text</key>
+			<string>Search Bing for '{query}'</string>
+			<key>url</key>
+			<string>https://cn.bing.com/search?q={query}+-%28CSDN%29+NOT+%28baidu%29</string>
+		</dict>
+		<key>BDF18CF9-35AA-42C9-8CAB-C96D479BA580</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>githubstar</string>
+			<key>text</key>
+			<string>My github star for '{query}'</string>
+			<key>url</key>
+			<string>https://github.com/darkThanBlack?submit=search&amp;tab=stars&amp;q={query}</string>
 		</dict>
 	</dict>
 	<key>onlyShowEnabledInPrefs</key>
