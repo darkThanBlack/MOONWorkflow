@@ -9,20 +9,18 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>translate</string>
+			<string>ssenus</string>
 			<key>text</key>
 			<string>英译中：'{query}'</string>
 			<key>url</key>
-			<string>https://translate.google.cn/?sl=en&amp;tl=zh-CN&amp;text={query}&amp;op=translate</string>
-			<key>utf8</key>
-			<true/>
+			<string>https://translate.google.com/?sl=en&amp;tl=zh-CN&amp;text={query}&amp;op=translate</string>
 		</dict>
 		<key>1B6D998D-6C33-4E72-BC81-9A4FD4E55F35</key>
 		<dict>
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>google</string>
+			<string>ssgoogle</string>
 			<key>text</key>
 			<string>Search Google for '{query}'</string>
 			<key>url</key>
@@ -33,7 +31,7 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>githubrepository</string>
+			<string>ssgithubrepository</string>
 			<key>text</key>
 			<string>Search github for '{query}'</string>
 			<key>url</key>
@@ -44,7 +42,7 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>baidu</string>
+			<string>ssbaidu</string>
 			<key>text</key>
 			<string>Search Baidu for '{query}'</string>
 			<key>url</key>
@@ -55,7 +53,7 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>stackoverflow</string>
+			<string>ssstackoverflow</string>
 			<key>text</key>
 			<string>Search stackoverflow for '{query}'</string>
 			<key>url</key>
@@ -66,33 +64,29 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>fanyi</string>
+			<string>sszhcn</string>
 			<key>text</key>
 			<string>中译英：`{query}`</string>
 			<key>url</key>
-			<string>https://translate.google.cn/?sl=zh-CN&amp;tl=en&amp;text={query}&amp;op=translate</string>
-			<key>utf8</key>
-			<true/>
+			<string>https://translate.google.com/?sl=zh-CN&amp;tl=en&amp;text={query}&amp;op=translate</string>
 		</dict>
 		<key>5F75C817-089C-4380-ABC8-A3A6F8035D5B</key>
 		<dict>
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>diigo</string>
+			<string>ssdiigo</string>
 			<key>text</key>
 			<string>Search Diigo for '{query}'</string>
 			<key>url</key>
 			<string>https://www.diigo.com/user/darkthanblack?query={query}</string>
-			<key>utf8</key>
-			<true/>
 		</dict>
 		<key>BAAF1B59-FD68-4534-A08D-4D3916F1D99E</key>
 		<dict>
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>bing</string>
+			<string>ssbing</string>
 			<key>text</key>
 			<string>Search Bing for '{query}'</string>
 			<key>url</key>
@@ -103,7 +97,7 @@
 			<key>enabled</key>
 			<true/>
 			<key>keyword</key>
-			<string>githubstar</string>
+			<string>ssgithubstar</string>
 			<key>text</key>
 			<string>My github star for '{query}'</string>
 			<key>url</key>
