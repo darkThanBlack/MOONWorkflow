@@ -7,9 +7,9 @@
 ```shell
 # ~/Library/LaunchAgents
 
+launchctl load /Users/xuyiding/Library/LaunchAgents/moonShadow.github.sync.plist
+launchctl start /Users/xuyiding/Library/LaunchAgents/moonShadow.github.sync.plist
 ```
-
-
 
 
 
