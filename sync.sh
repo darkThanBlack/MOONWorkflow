@@ -1,47 +1,58 @@
 #!/bin/sh
+workflow_path=""
+blog_path=""
+kit_path=""
 
-# SHELL_FOLDER=$(
-#   cd "$(dirname "$0")"
-#   pwd
-# )
+fire_sync() {
+  read -p "开始同步? y/N" ensure;
+  if [[ ${ensure} == "y" ]]; then
+    cd $workflow_path
+    git add .
+    git commit . -m 'daily sync with script'
+    git pull --ff
+    git push
 
-SHELL_FOLDER="/Users/xuyiding/Documents/XiaoMai/b-ka-chain"
+    cd $blog_path
+    git add .
+    git commit . -m 'daily sync with script'
+    git pull --ff
+    git push
+    source ~/venv3.12/bin/activate
+    mkdocs gh-deploy
+    deactivate
 
-PATH_PROJ="/Users/xuyiding/Documents/XiaoMai/b-ka-chain"
-
-FILE_TMP=moon_tmp
-
-# result=$(osascript test.applescript)
-
-find ${PATH_PROJ} -name "*.xcodeproj" >${FILE_TMP}
-
-menuItems=""
-
-for path in $(cat ${FILE_TMP}); do
-  if [ -e ${path} ]; then
-    # p=${path%/*}
-    # echo "path=${path}"
-    name=$(basename ${path} .xcodeproj)
-    menuItems+="${name} "
-    # cd $p
-    # xcodegen
+    cd $kit_path
+    git add .
+    git commit . -m 'daily sync with script'
+    git pull --ff
+    git push
   fi
+}
+
+show_menu() {
+    echo """
+0> 退出
+Enter 重新打印
+
+====== 菜单 ======
+我在哪台电脑上?
+1>xm-mbp
+2>home-mbp
+3>home_pc
+4>xm-mac_studio
+"""
+}
+
+show_menu
+while read -p "请选择> " idx; do
+    if [[ ${idx} == "0" ]]; then
+      exit 0
+    elif [[ ${idx} == "1" ]]; then
+      workflow_path="~/Documents/iOS/MOONWorkflow"
+      blog_path="~/Documents/iOS/darkThanBlack.github.io"
+      kit_path="~/Documents/iOS/DTBKit"
+      fire_sync
+    else
+      show_menu
+    fi
 done
-echo $menuItems
-# https://stackoverflow.com/questions/16966117
-result=`osascript test.applescript ${menuItems}`
-echo "get result"
-# https://www.jianshu.com/p/47cfd835b35d
-# result=$(osascript <<EOF
-# tell application "Xcode"
-# 	set v to version ≤ "12.5.0"
-# end tell
-# get v
-# EOF
-# )
-
-# if [[ "${result}" != "true" ]]; then
-#   echo "警告：当前应用版本过高，可能出现适配问题"
-# fi
-
-# echo $result
