@@ -1,7 +1,4 @@
 #!/bin/sh
-workflow_path=""
-blog_path=""
-kit_path=""
 
 fire_sync() {
   read -p "开始同步? y/N" ensure;
@@ -48,9 +45,9 @@ while read -p "请选择> " idx; do
     if [[ ${idx} == "0" ]]; then
       exit 0
     elif [[ ${idx} == "1" ]]; then
-      workflow_path="~/Documents/iOS/MOONWorkflow"
-      blog_path="~/Documents/iOS/darkThanBlack.github.io"
-      kit_path="~/Documents/iOS/DTBKit"
+      workflow_path="/Users/xuyiding/Documents/iOS/MOONWorkflow"
+      blog_path="/Users/xuyiding/Documents/iOS/darkThanBlack.github.io"
+      kit_path="/Users/xuyiding/Documents/iOS/DTBKit"
       fire_sync
     else
       show_menu
