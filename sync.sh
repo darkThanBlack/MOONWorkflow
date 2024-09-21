@@ -1,6 +1,8 @@
 #!/bin/sh
 
 fire_sync() {
+  echo $(date)
+
   cd $workflow_path
   git add .
   git commit . -m 'daily sync with script'
