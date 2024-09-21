@@ -11,6 +11,8 @@ cp ~/Documents/iOS/MOONWorkflow/moonShadow.github.sync.plist ~/Library/LaunchAge
 # unload / stop / list
 sudo launchctl load /Users/xuyiding/Library/LaunchAgents/moonShadow.github.sync.plist
 launchctl start /Users/xuyiding/Library/LaunchAgents/moonShadow.github.sync.plist
+launchctl unload /Users/xuyiding/Library/LaunchAgents/moonShadow.github.sync.plist
+launchctl list | grep moonShadow
 ```
 
 
