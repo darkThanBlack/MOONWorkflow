@@ -6,8 +6,10 @@
 
 ```shell
 # ~/Library/LaunchAgents
+cp ~/Documents/iOS/MOONWorkflow/moonShadow.github.sync.plist ~/Library/LaunchAgents
 
-launchctl load /Users/xuyiding/Library/LaunchAgents/moonShadow.github.sync.plist
+# unload / stop / list
+sudo launchctl load /Users/xuyiding/Library/LaunchAgents/moonShadow.github.sync.plist
 launchctl start /Users/xuyiding/Library/LaunchAgents/moonShadow.github.sync.plist
 ```
 
