@@ -2,6 +2,17 @@
 
 
 
+#### Sync
+
+```shell
+# ~/Library/LaunchAgents
+
+```
+
+
+
+
+
 ## Git
 
 * [Sourcetree](https://www.sourcetreeapp.com/)
