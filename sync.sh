@@ -1,35 +1,40 @@
 #!/bin/sh
 
 fire_sync() {
-  read -p "开始同步? y/N" ensure;
-  if [[ ${ensure} == "y" ]]; then
-    cd $workflow_path
-    git add .
-    git commit . -m 'daily sync with script'
-    git pull --ff
-    git push
+  cd $workflow_path
+  git add .
+  git commit . -m 'daily sync with script'
+  git pull --ff
+  git push
 
-    cd $blog_path
-    git add .
-    git commit . -m 'daily sync with script'
-    git pull --ff
-    git push
-    source ~/venv3.12/bin/activate
-    mkdocs gh-deploy
-    deactivate
+  cd $blog_path
+  git add .
+  git commit . -m 'daily sync with script'
+  git pull --ff
+  git push
+  source ~/venv3.12/bin/activate
+  mkdocs gh-deploy
+  deactivate
 
-    cd $kit_path
-    git add .
-    git commit . -m 'daily sync with script'
-    git pull --ff
-    git push
+  cd $kit_path
+  git add .
+  git commit . -m 'daily sync with script'
+  git pull --ff
+  git push
+}
+
+fire() {
+  if [[ $1 == "1" ]]; then
+      workflow_path="/Users/xuyiding/Documents/iOS/MOONWorkflow"
+      blog_path="/Users/xuyiding/Documents/iOS/darkThanBlack.github.io"
+      kit_path="/Users/xuyiding/Documents/iOS/DTBKit"
+      fire_sync
   fi
 }
 
 show_menu() {
     echo """
 0> 退出
-Enter 重新打印
 
 ====== 菜单 ======
 我在哪台电脑上?
@@ -40,16 +45,16 @@ Enter 重新打印
 """
 }
 
-show_menu
-while read -p "请选择> " idx; do
+if [[ ! $1 ]]; then
+  show_menu
+  while read -p "请选择> " idx; do
     if [[ ${idx} == "0" ]]; then
       exit 0
-    elif [[ ${idx} == "1" ]]; then
-      workflow_path="/Users/xuyiding/Documents/iOS/MOONWorkflow"
-      blog_path="/Users/xuyiding/Documents/iOS/darkThanBlack.github.io"
-      kit_path="/Users/xuyiding/Documents/iOS/DTBKit"
-      fire_sync
     else
-      show_menu
+      fire $idx
     fi
-done
+  done
+else
+  fire $1
+fi
+
