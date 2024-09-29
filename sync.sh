@@ -10,13 +10,18 @@ fire_sync() {
   git push
 
   cd $blog_path
-  git add .
-  git commit . -m 'daily sync with script'
-  git pull --ff
-  git push
-  source ~/venv3.12/bin/activate
-  mkdocs gh-deploy
-  deactivate
+  if [[ -z $(git status -s) ]]
+  then
+    echo "${blog_path} is clear."
+  else
+    git add .
+    git commit . -m 'daily sync with script'
+    git pull --ff
+    git push
+    source ~/venv3.12/bin/activate
+    mkdocs gh-deploy
+    deactivate
+  fi
 
   cd $kit_path
   git add .
