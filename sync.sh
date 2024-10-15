@@ -35,7 +35,7 @@ fire_sync() {
     git push
 
     # jazzy
-    jazzy \
+    /Users/xuyiding/.rvm/gems/ruby-3.0.0/bin/jazzy \
       --clean \
       --author darkThanBlack \
       --author_url https://darkthanblack.github.io \
