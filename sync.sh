@@ -33,27 +33,6 @@ fire_sync() {
     git commit . -m 'daily sync with script'
     git pull --ff
     git push
-
-    # jazzy
-    /Users/xuyiding/.rvm/gems/ruby-3.0.0/bin/jazzy \
-      --clean \
-      --author darkThanBlack \
-      --author_url https://darkthanblack.github.io \
-      --source-host github \
-      --source-host-url https://github.com/darkThanBlack/DTBKit \
-      --exclude "Sources/Chain/*" \
-      --output docs \
-      --theme apple
-    mv docs ~/Documents/docs
-    rm -rf docs
-    git checkout gh-pages
-    git pull --ff
-    mv ~/Documents/docs ./
-    rm -rf ~/Documents/docs
-    git add .
-    git commit . -m 'deploy from jazzy'
-    git push
-    git checkout main
   fi
 }
 
