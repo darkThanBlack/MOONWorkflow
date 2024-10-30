@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "<details>\n  <summary>折叠描述<\/summary>\n  折叠文案\n<\/details>",
+    "uid" : "41FA20E0-B6A9-42B7-BC78-970758204E4F",
+    "name" : "折叠",
+    "keyword" : "summary"
+  }
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON__NewView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import "&lt;#UniqueName#&gt;View.h"
+#import "&lt;#UniqueName#&gt;Helper.h"
+
+@interface &lt;#UniqueName#&gt;View()
+
+@end
+
+@implementation &lt;#UniqueName#&gt;View
+
+#pragma mark Getter
+
+#pragma mark Setter
+
+#pragma mark Life Cycle
+
+- (instancetype)init
+{
+    if (self = [super init]) {
+        [self load&lt;#UniqueName#&gt;Views_];
+    }
+    return self;
+}
+
+#pragma mark View
+
+- (void)load&lt;#UniqueName#&gt;Views_
+{
+    
+    [self load&lt;#UniqueName#&gt;Constraints_];
+}
+
+- (void)load&lt;#UniqueName#&gt;Constraints_
+{
+    
+}
+
+@end
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON__NewView</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>初始化一个新的 UIView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_NewView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

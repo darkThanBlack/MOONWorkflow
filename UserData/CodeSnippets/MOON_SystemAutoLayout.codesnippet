@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>@MOON_SystemAutoLayout</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        [&lt;#View#&gt;].forEach({
+            $0.translatesAutoresizingMaskIntoConstraints = false
+        })
+        if #available(iOS 11.0, *) {
+            &lt;#View#&gt;.topAnchor.constraint(equalTo: box.safeAreaLayoutGuide.topAnchor, constant: 0.0).isActive = true
+            &lt;#View#&gt;.bottomAnchor.constraint(equalTo: box.safeAreaLayoutGuide.bottomAnchor, constant: 0.0).isActive = true
+        } else {
+            &lt;#View#&gt;.topAnchor.constraint(equalTo: box.topAnchor, constant: 0.0).isActive = true
+            &lt;#View#&gt;.bottomAnchor.constraint(equalTo: box.bottomAnchor, constant: 0.0).isActive = true
+        }
+        NSLayoutConstraint.activate([
+            &lt;#View#&gt;.centerXAnchor.constraint(equalTo: box.centerXAnchor, constant: 0.0),
+            &lt;#View#&gt;.centerYAnchor.constraint(equalTo: box.centerYAnchor, constant: 0.0),
+            
+            &lt;#View#&gt;.topAnchor.constraint(equalTo: box.topAnchor, constant: 0.0),
+            &lt;#View#&gt;.leftAnchor.constraint(equalTo: box.leftAnchor, constant: 0.0),
+            &lt;#View#&gt;.rightAnchor.constraint(equalTo: box.rightAnchor, constant: 0.0),
+            &lt;#View#&gt;.bottomAnchor.constraint(equalTo: box.bottomAnchor, constant: 0.0),
+            
+            &lt;#View#&gt;.widthAnchor.constraint(equalToConstant: 0.0),
+            &lt;#View#&gt;.heightAnchor.constraint(equalToConstant: 0.0),
+        ])
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON_SystemAutoLayout</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>原生 AutoLayout</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_SystemAutoLayout</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

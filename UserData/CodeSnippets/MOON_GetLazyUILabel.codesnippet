@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON_GetLazyUILabel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    private lazy var &lt;#Label#&gt;: UILabel = {
+        let &lt;#Label#&gt; = UILabel()
+        &lt;#Label#&gt;.font = UIFont.systemFont(ofSize: &lt;#T##CGFloat#&gt;, weight: .regular)
+        &lt;#Label#&gt;.textColor = &lt;#Color#&gt;
+        &lt;#Label#&gt;.text = " "
+        &lt;#Label#&gt;.numberOfLines = 0
+        &lt;#Label#&gt;.textAlignment = .center
+        return &lt;#Label#&gt;
+    }()
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON_GetLazyUILabel</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UILabel 快速声明</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_GetLazyUILabel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

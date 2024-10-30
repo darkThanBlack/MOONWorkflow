@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>@MOON_GetLazyShapeLayer</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        layer.addSublayer(shape)
+        
+        private lazy var shape: CAShapeLayer = {
+            let shape = CAShapeLayer()
+            shape.fillColor = UIColor.clear.cgColor
+            shape.strokeColor = UIColor.clear.cgColor
+            shape.lineWidth = 1.0
+            shape.strokeStart = 0.0
+            shape.strokeEnd = 1.0
+            return shape
+        }()
+        
+        override func layoutSubviews() {
+            super.layoutSubviews()
+            
+            let path = UIBezierPath(
+                roundedRect: bounds,
+                byRoundingCorners: [.topLeft, .bottomLeft],
+                cornerRadii: CGSize(
+                    width: bounds.size.height / 2.0,
+                    height: bounds.size.height / 2.0
+                )
+            )
+            shape.path = path.cgPath
+        }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON_GetLazyShapeLayer</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>CAShapeLayer 快速声明</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_GetLazyShapeLayer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>0631319B-E38D-496C-917D-54C154AA4ECF</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ssenus</string>
+			<key>text</key>
+			<string>英译中：'{query}'</string>
+			<key>url</key>
+			<string>https://translate.google.com/?sl=en&amp;tl=zh-CN&amp;text={query}&amp;op=translate</string>
+		</dict>
+		<key>1B6D998D-6C33-4E72-BC81-9A4FD4E55F35</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ssgoogle</string>
+			<key>text</key>
+			<string>Search Google for '{query}'</string>
+			<key>url</key>
+			<string>https://www.google.com.hk/search?q={query}+-csdn+-tencent+-baidu</string>
+		</dict>
+		<key>1BC74099-8D07-4A00-8FE4-F028147BAB74</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ssgithubrepository</string>
+			<key>text</key>
+			<string>Search github for '{query}'</string>
+			<key>url</key>
+			<string>https://github.com/search?type=repositories&amp;q={query}</string>
+		</dict>
+		<key>23F72474-D6EB-4192-B7AD-EF0D9D0571A4</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ssbaidu</string>
+			<key>text</key>
+			<string>Search Baidu for '{query}'</string>
+			<key>url</key>
+			<string>https://www.baidu.com/s?wd={query}%20-(csdn)%20-(baidu)</string>
+		</dict>
+		<key>28EC5620-73F8-42D7-81E8-DE1469D315AB</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ssstackoverflow</string>
+			<key>text</key>
+			<string>Search stackoverflow for '{query}'</string>
+			<key>url</key>
+			<string>https://stackoverflow.com/search?q=%5Bios%5D+{query}</string>
+		</dict>
+		<key>495132AC-571D-40FB-9235-0C1641499DFB</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>sszhcn</string>
+			<key>text</key>
+			<string>中译英：`{query}`</string>
+			<key>url</key>
+			<string>https://translate.google.com/?sl=zh-CN&amp;tl=en&amp;text={query}&amp;op=translate</string>
+		</dict>
+		<key>5F75C817-089C-4380-ABC8-A3A6F8035D5B</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ssdiigo</string>
+			<key>text</key>
+			<string>Search Diigo for '{query}'</string>
+			<key>url</key>
+			<string>https://www.diigo.com/user/darkthanblack?query={query}</string>
+		</dict>
+		<key>BAAF1B59-FD68-4534-A08D-4D3916F1D99E</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ssbing</string>
+			<key>text</key>
+			<string>Search Bing for '{query}'</string>
+			<key>url</key>
+			<string>https://cn.bing.com/search?q={query}+-%28CSDN%29+NOT+%28baidu%29</string>
+		</dict>
+		<key>BDF18CF9-35AA-42C9-8CAB-C96D479BA580</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>ssgithubstar</string>
+			<key>text</key>
+			<string>My github star for '{query}'</string>
+			<key>url</key>
+			<string>https://github.com/darkThanBlack?submit=search&amp;tab=stars&amp;q={query}</string>
+		</dict>
+	</dict>
+	<key>onlyShowEnabledInPrefs</key>
+	<true/>
+</dict>
+</plist>

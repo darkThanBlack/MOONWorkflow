@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON_NewViewController</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>///&lt;#NAME#&gt;
+class &lt;#NAME#&gt;ViewController: UIViewController {
+    
+    //MARK: Interface
+    
+    //private let viewModel = &lt;#NAME#&gt;ViewModel()
+    //private let request = &lt;#NAME#&gt;Requests()
+    
+    //MARK: Life Cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        loadViews(in: view)
+    }
+    
+    //MARK: View
+    
+    private func loadViews(in box: UIView) {
+        
+        loadConstraints(in: box)
+    }
+    
+    private func loadConstraints(in box: UIView) {
+        
+    }
+    
+    //MARK: Event
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON_NewViewController</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>初始化一个新的自定义 UIViewController</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_NewViewController</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,25 @@
+! Put user rules line by line in this file.
+! See https://adblockplus.org/en/filter-cheatsheet
+
+github.com
+github.blog
+github.io
+githubusercontent.com
+raw.githubusercontent.com
+openai.com
+i.stack.imgur.com
+www.gravatar.com
+reddit.com
+preview.redd.it
+styles.redditmedia.com
+store.steampowered.com
+steamdb.info
+nshipster.com
+pub.dev
+support.typora.io
+diigo.com
+ssr.tools
+app.diagrams.net
+draw.io
+preppercn.com
+arr014.network

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON_SingleTapGesture</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        &lt;#View#&gt;.isUserInteractionEnabled = true
+        let singleTap = UITapGestureRecognizer(target: self, action: #selector(&lt;#View#&gt;Event(gesture:)))
+        singleTap.numberOfTapsRequired = 1
+        singleTap.numberOfTouchesRequired = 1
+        &lt;#View#&gt;.addGestureRecognizer(singleTap)
+        
+        @objc private func &lt;#View#&gt;Event(gesture: UITapGestureRecognizer) {
+            
+        }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON_SingleTapGesture</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速添加 View 单击手势事件</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_SingleTapGesture</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

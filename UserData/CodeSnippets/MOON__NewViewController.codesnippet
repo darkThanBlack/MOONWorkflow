@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MOON__NewViewController</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import "&lt;#UniqueName#&gt;ViewController.h"
+#import "&lt;#UniqueName#&gt;View.h"
+#import "&lt;#UniqueName#&gt;Helper.h"
+
+@interface &lt;#UniqueName#&gt;ViewController ()
+
+@property (nonatomic, strong) &lt;#UniqueName#&gt;View *basicView;
+
+@end
+
+@implementation &lt;#UniqueName#&gt;ViewController
+
+#pragma mark Getter
+
+- (&lt;#UniqueName#&gt;View *)basicView
+{
+    if (!_basicView) {
+        _basicView = [[&lt;#UniqueName#&gt;View alloc]init];
+        _basicView.backgroundColor = [UIColor whiteColor];
+    }
+    return _basicView;
+}
+
+#pragma mark Setter
+
+#pragma mark Life Cycle
+
+- (instancetype)init
+{
+    if (self = [super init]) {
+        [self manage&lt;#UniqueName#&gt;NotificationsWithLifeCycle:YES load:YES];
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    [self manage&lt;#UniqueName#&gt;NotificationsWithLifeCycle:YES load:NO];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self load&lt;#UniqueName#&gt;Navigations_];
+    
+    [self manage&lt;#UniqueName#&gt;NotificationsWithLifeCycle:NO load:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self manage&lt;#UniqueName#&gt;NotificationsWithLifeCycle:NO load:NO];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self load&lt;#UniqueName#&gt;BasicViews_];
+}
+
+#pragma mark View
+
+- (void)load&lt;#UniqueName#&gt;Navigations_
+{
+    
+}
+
+- (void)load&lt;#UniqueName#&gt;BasicViews_
+{
+    [self.view addSubview:self.basicView];
+    
+    [self load&lt;#UniqueName#&gt;BasicConstraints_];
+}
+
+- (void)load&lt;#UniqueName#&gt;BasicConstraints_
+{
+    [self.basicView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top).offset(0);
+        make.left.equalTo(self.view.mas_left).offset(0);
+        make.right.equalTo(self.view.mas_right).offset(0);
+        make.bottom.equalTo(self.view.mas_bottom).offset(0);
+    }];
+}
+
+#pragma mark Notification
+
+- (void)manage&lt;#UniqueName#&gt;NotificationsWithLifeCycle:(BOOL)always load:(BOOL)load
+{
+    if (always) {
+        if (load) {
+            
+        } else {
+            
+        }
+    } else {
+        if (load) {
+            
+        } else {
+            
+        }
+    }
+}
+
+#pragma mark Data
+
+#pragma mark Event
+
+@end
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>MOON__NewViewController</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>初始化一个新的 UIViewController</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MOON_NewViewController</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
