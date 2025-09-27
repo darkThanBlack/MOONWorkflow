@@ -245,20 +245,6 @@ $ git clone --depth 1 --branch master git@github.com:darkThanBlack/MOONWorkflow.
 * ``~/Library/Developer/Xcode/UserData``
 
   * CodeSnippets
-    * 固定前缀：``MOON``
-    * 片段文件名：OC 用``MOON__``开头，Swift 用``MOON_``开头以区分，快捷方式不变。
-      * 新建文件：``MOON_New``
-        * ``MOON_NewViewController``
-        * ``MOON_NewView``
-        * ``MOON_NewCell``
-      * 对象声明：``MOON_GetLazy``
-        * ``MOON_GetLazyUIView``
-        * ``MOON_GetLazyUILabel``
-        * ``MOON_GetLazyUIImageView``
-        * ``MOON_GetLazyUIButton``
-        * ``MOON_GetLazyUITableView``
-      * 页面布局：``MOON_SnapKit``
-      * 用户事件：``MOON_SingleTapGesture``
   * FontAndColorThemes
   * KeyBindings
 
@@ -273,11 +259,11 @@ $ git clone --depth 1 --branch master git@github.com:darkThanBlack/MOONWorkflow.
 
 
 
-## Env
+## Shell
 
-首先需确认是否 ``Rosetta``
+首先需确认是否 ``Rosetta``，因为在 Rosetta 模式的命令行窗口中安装的工具也会变成兼容模式。
 
-#### Sync
+## Sync
 
 ```shell
 # ~/Library/LaunchAgents
@@ -292,9 +278,9 @@ launchctl list | grep moonShadow
 
 
 
-#### Homebrew
+## Homebrew
 
-* [Website](https://brew.sh/)
+[Website](https://brew.sh/)
 
 ```shell
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -304,11 +290,38 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 $ brew install xcodegen
 ```
 
+报错
+
+```shell
+# ERROR
+fatal: cannot create directory at 'Library/Homebrew/vendor/bundle/ruby/3.4.0/gems/base64-0.3.0': Permission denied
+# FIX
+# 修复 Homebrew 目录的所有权
+sudo chown -R $(whoami) $(brew --prefix)
+# 如果上面命令报错，试试这个
+sudo chown -R $(whoami) /opt/homebrew
+# 或者对于 Intel Mac
+sudo chown -R $(whoami) /usr/local/Homebrew
 
 
-#### RVM
+# ERROR
+<internal:/opt/homebrew/Library/Homebrew/vendor/portable-ruby/3.4.4/lib/ruby/3.4.0/rubygems/core_ext/kernel_require.rb>:37:in 'Kernel#require': cannot load such file -- sorbet-runtime (LoadError)
+	from <internal:/opt/homebrew/Library/Homebrew/vendor/portable-ruby/3.4.4/lib/ruby/3.4.0/rubygems/core_ext/kernel_require.rb>:37:in 'Kernel#require'
 
-* [Website](https://rvm.io/)
+# FIX
+# 检查 git 连通性
+cd /opt/homebrew
+git fetch origin
+# 这个是重装 ruby 独立环境
+rm -rf /opt/homebrew/Library/Homebrew/vendor
+brew update --force
+```
+
+
+
+## RVM
+
+[Website](https://rvm.io/)
 
 ```shell
 $ \curl -sSL https://get.rvm.io | bash -s stable
@@ -326,7 +339,7 @@ $ which ruby
 
 
 
-#### GEM
+## GEM
 
 ```shell
 $ ruby --version  # 3.0.0
@@ -341,9 +354,9 @@ $ gem install cocoapods -v 1.15.2
 
 
 
-#### Cocoapods
+## Cocoapods
 
-* [Website](https://cocoapods.org/)
+[Website](https://cocoapods.org/)
 
 ```shell
 $ pod --version
@@ -351,6 +364,88 @@ $ pod --version
 $ pod setup --verbose
 $ pod install --verbose
 ```
+
+
+
+## Claude Code
+
+[Website](https://docs.claude.com/en/docs/claude-code/quickstart#native-install)
+
+`````shell
+npm install -g @anthropic-ai/claude-code
+# or
+curl -fsSL https://claude.ai/install.sh | bash
+
+# Proj/.claude/settings.local.json
+{
+  "permissions": {
+    "defaultMode": "bypassPermissions"
+  }
+}
+`````
+
+
+
+## CCR
+
+[Link](https://github.com/musistudio/claude-code-router)
+
+```shell
+npm install -g @musistudio/claude-code-router
+
+ccr status / start / ui / code
+```
+
+重点在于 api_base_url 的 v1 后缀需要和实际的提供服务对应上，否则就得用 transformer 
+
+`````json
+{
+  "LOG": false,
+  "LOG_LEVEL": "debug",
+  "CLAUDE_PATH": "",
+  "HOST": "127.0.0.1",
+  "PORT": 3456,
+  "APIKEY": "",
+  "API_TIMEOUT_MS": "600000",
+  "PROXY_URL": "",
+  "transformers": [],
+  "Providers": [
+    {
+      "name": "Claude",
+      "api_base_url": "https://llm.ixm5.cn/v1/messages",
+      "api_key": "sk-",
+      "models": [
+        "claude-sonnet-4-20250514"
+      ],
+      "transformer": {
+        "use": [
+          "Anthropic"
+        ]
+      }
+    }
+  ],
+  "StatusLine": {
+    "enabled": false,
+    "currentStyle": "default",
+    "default": {
+      "modules": []
+    },
+    "powerline": {
+      "modules": []
+    }
+  },
+  "Router": {
+    "default": "Claude,claude-sonnet-4-20250514",
+    "background": "Claude,claude-sonnet-4-20250514",
+    "think": "Claude,claude-sonnet-4-20250514",
+    "longContext": "Claude,claude-sonnet-4-20250514",
+    "longContextThreshold": 60000,
+    "webSearch": "Claude,claude-sonnet-4-20250514",
+    "image": "Claude,claude-sonnet-4-20250514"
+  },
+  "CUSTOM_ROUTER_PATH": ""
+}
+`````
 
 
 
